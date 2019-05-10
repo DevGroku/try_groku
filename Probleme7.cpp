@@ -2,7 +2,7 @@
 #include <vector>
 #include <math.h>
 
-bool Premier(int a) {
+bool is_prime(int a) {
     bool result = true;
 
     for (int i = 2 ; i < sqrt(a) ; i++) {
@@ -20,7 +20,7 @@ int main() {
     //nbr_premier[0] = 2;*/
 
     for (int i = 2; i < 200000 ; i++) {
-        if (Premier(i) == true){
+        if (is_prime(i) == true){
             nbr_premier.push_back(i);
         }
     }
